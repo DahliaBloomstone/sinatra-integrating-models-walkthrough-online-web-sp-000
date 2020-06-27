@@ -11,6 +11,8 @@ class App < Sinatra::Base
 #post '/' do, which receives the form data through params and renders the results page.
   post '/' do
     text_from_user = params[:user_text]
+    @analyzed_text = TextAnalyzer.new(text_from_user)
+
     erb :results
   end
 
