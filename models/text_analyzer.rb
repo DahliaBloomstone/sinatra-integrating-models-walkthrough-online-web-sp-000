@@ -41,3 +41,11 @@ class TextAnalyzer
     biggest
   end
 end
+
+
+
+#my_text = TextAnalyzer.new("The rain in Spain stays mainly on the plain.")
+#my_text.count_of_words #=> 9
+#my_text.count_of_vowels #=> 13
+#my_text.count_of_consonants #=> 22
+#my_text.most_used_letter #=> {"n" => 6}
