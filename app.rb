@@ -14,10 +14,7 @@ class App < Sinatra::Base
 #data from params[:user_text] (in the post '/' do route) and feed it into a new instance of the TextAnalyzer class:
   @analyzed_text = TextAnalyzer.new(params[:user_text])
 #the instance of TextAnalyzer saved to an instance variable called @analyzed_text. This means that we can call it and its methods from the results.erb view that is being rendered, using erb tags
-
-
-
-    erb :results
+  erb :results
   end
 
 end
