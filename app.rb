@@ -9,7 +9,6 @@ class App < Sinatra::Base
   end
 
 #post '/' do, which receives the form data through params and renders the results page.
-
   post '/' do
     text_from_user = params[:user_text]
 
